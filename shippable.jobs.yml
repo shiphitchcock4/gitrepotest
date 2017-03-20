@@ -10,6 +10,7 @@ jobs:
       - IN: image1
        
       - IN: sample-private1
+      - IN: sample-public1
      
       #- IN: allpl-version
       #  versionName: 28361828b3079fce434d84b1f8388aed167be15f
@@ -19,6 +20,7 @@ jobs:
      # - IN: rc1
       - TASK:
          - script: ./IN/sample-private1/gitRepo/echo.sh
+         - script: ./IN/sample-public1/gitRepo/echo.sh
          - script: pwd
   
       
