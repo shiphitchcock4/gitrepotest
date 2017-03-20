@@ -10,6 +10,7 @@ jobs:
       - IN: image1
        
   #    - IN: sample-private1
+      - IN: script
       - IN: sample-publicchangename
       - IN: sample-publicproject2
       #- IN: allpl-version
@@ -21,6 +22,7 @@ jobs:
       - TASK:
          - script: ./IN/sample-publicproject2/gitRepo/echo.sh
          - script: ./IN/sample-publicchangename/gitRepo/echo.sh
+         - script: ./IN/script/gitRepo/echo.sh
          - script: pwd
   
       
