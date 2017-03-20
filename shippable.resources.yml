@@ -11,7 +11,7 @@ resources:
     integration: github
     pointer:
       sourceName: shiphitchcock4/sample-script2
-      branch: master
+      branch: non
       
   - name: script
     type: gitRepo
