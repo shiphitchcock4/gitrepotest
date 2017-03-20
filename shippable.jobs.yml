@@ -1,0 +1,41 @@
+
+jobs:  
+       
+      
+  - name: run1public
+    type: runSh
+  #  serial: false
+    steps:
+    #  - IN: sample-script-31  #girepo reso name
+      - IN: allpl-image21
+       
+      - IN: sample-public
+     
+      #- IN: allpl-version
+      #  versionName: 28361828b3079fce434d84b1f8388aed167be15f
+      # versionNumber: 1
+     # - IN: foo-resource
+     # - IN: env
+     # - IN: rc1
+      - TASK:
+         - script: ./IN/sample-publicgitrepo/gitRepo/echo.sh
+         - script: pwd
+  
+      
+#  - name: four
+#    type: runSh
+ #   serial: false
+ #   steps:
+ #     - IN: sample-testprivate1
+      #  switch: off
+ #     - IN: rc1
+     
+ #     - IN: allpl-image21
+ #     - TASK:
+  #      - script: ./IN/sample-testprivate1/gitRepo/echo.sh
+  #  on_success:
+  #    - NOTIFY: mySlackS1
+  #    - NOTIFY: myEmailS1
+  #  on_failure:
+  #    - NOTIFY: mySlackS1
+  #    - NOTIFY: myEmailS1 
