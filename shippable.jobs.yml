@@ -19,7 +19,7 @@ jobs:
      # - IN: env
      # - IN: rc1
       - TASK:
-         - script: ./IN/sample-public2/gitRepo/echo.sh
+         - script: ./IN/sample-publicproject2/gitRepo/echo.sh
          - script: ./IN/sample-public1/gitRepo/echo.sh
          - script: pwd
   
