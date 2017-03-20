@@ -24,7 +24,7 @@ jobs:
          - script: pwd
   
       
-  - name: four
+  - name: four1
     type: runSh
  #   serial: false
     steps:
