@@ -10,8 +10,8 @@ jobs:
       - IN: image1
        
   #    - IN: sample-private1
-      - IN: script
-      - IN: sample-publicchangename
+      #- IN: script
+      #- IN: sample-publicchangename
       - IN: sample-publicproject2
       #- IN: allpl-version
       #  versionName: 28361828b3079fce434d84b1f8388aed167be15f
@@ -21,8 +21,8 @@ jobs:
      # - IN: rc1
       - TASK:
          - script: ./IN/sample-publicproject2/gitRepo/echo.sh
-         - script: ./IN/sample-publicchangename/gitRepo/echo.sh
-         - script: ./IN/script/gitRepo/echo.sh
+         #- script: ./IN/sample-publicchangename/gitRepo/echo.sh
+         #- script: ./IN/script/gitRepo/echo.sh
          - script: pwd
   
       
