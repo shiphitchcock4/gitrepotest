@@ -6,12 +6,12 @@ resources:
       sourceName: shiphitchcock4/sample-script
       branch: master
   
-#  - name: sample-publicproject2
-#    type: gitRepo
-#    integration: github
-#    pointer:
-#      sourceName: shiphitchcock4/sample-script2
-#      branch: master
+  - name: sample-publicproject2
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiphitchcock4/sample-script2
+      branch: master
   
   
       
