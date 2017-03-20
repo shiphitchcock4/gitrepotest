@@ -28,13 +28,13 @@ jobs:
     type: runSh
  #   serial: false
     steps:
-      - IN: sample-testprivate1
+      - IN: sample-private1
       #  switch: off
      # - IN: rc1
      
       - IN: image1
       - TASK:
-        - script: ./IN/sample-testprivate1/gitRepo/echo.sh
+        - script: ./IN/sample-private1/gitRepo/echo.sh
   #  on_success:
   #    - NOTIFY: mySlackS1
   #    - NOTIFY: myEmailS1
