@@ -30,9 +30,9 @@ jobs:
     steps:
       - IN: sample-testprivate1
       #  switch: off
-      - IN: rc1
+     # - IN: rc1
      
-      - IN: allpl-image21
+      - IN: image1
       - TASK:
         - script: ./IN/sample-testprivate1/gitRepo/echo.sh
   #  on_success:
