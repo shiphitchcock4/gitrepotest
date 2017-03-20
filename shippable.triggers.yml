@@ -1,0 +1,15 @@
+triggers:
+  - name: gr1
+    type: trigger
+    version:
+      counter: 63
+      
+  - name: gr2
+    type: trigger
+    version:
+      counter: 427
+
+  - name: gr3
+    type: trigger
+    version:
+      counter: 0
