@@ -1,5 +1,5 @@
 resources:
-  - name: sample-public1
+  - name: sample-public11
     type: gitRepo
     integration: github
     pointer:
