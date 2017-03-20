@@ -1,0 +1,42 @@
+resources:
+  - name: sample-public1
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiphitchcock4/sample-script
+      branch: master
+      
+      
+  - name: sample-private1
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiphitchcock4/testprivate
+      branch: master
+      
+  - name: mySlackS2
+    type: notification
+    integration: "ship4-slack"
+    pointer:
+      recipients:
+       # - theyare
+        - "#pipeline-pvt"
+        - "#pipeline-public"
+        - "@shiphitchcock4"
+
+  - name: myEmailS2
+    type: notification
+    pointer:
+      method: email
+      recipients: 
+        - "sreya@shippable.com"
+        - "shiphitchcock4@gmail.com"
+        - "sreyaj10@gmail.com"
+    
+  - name: image1
+    type: image
+    integration: ship4-docker
+    pointer:
+      sourceName: "shiphitchcock4/hitchcock4_sample_nodenew"
+    seed:
+      versionName: "latest"
