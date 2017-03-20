@@ -7,9 +7,9 @@ jobs:
   #  serial: false
     steps:
     #  - IN: sample-script-31  #girepo reso name
-      - IN: allpl-image21
+      - IN: image1
        
-      - IN: sample-public
+      - IN: sample-public1
      
       #- IN: allpl-version
       #  versionName: 28361828b3079fce434d84b1f8388aed167be15f
@@ -18,7 +18,7 @@ jobs:
      # - IN: env
      # - IN: rc1
       - TASK:
-         - script: ./IN/sample-publicgitrepo/gitRepo/echo.sh
+         - script: ./IN/sample-public1/gitRepo/echo.sh
          - script: pwd
   
       
