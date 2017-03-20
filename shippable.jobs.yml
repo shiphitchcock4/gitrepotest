@@ -24,17 +24,17 @@ jobs:
          - script: pwd
   
       
-#  - name: four
-#    type: runSh
+  - name: four
+    type: runSh
  #   serial: false
- #   steps:
- #     - IN: sample-testprivate1
+    steps:
+      - IN: sample-testprivate1
       #  switch: off
- #     - IN: rc1
+      - IN: rc1
      
- #     - IN: allpl-image21
- #     - TASK:
-  #      - script: ./IN/sample-testprivate1/gitRepo/echo.sh
+      - IN: allpl-image21
+      - TASK:
+        - script: ./IN/sample-testprivate1/gitRepo/echo.sh
   #  on_success:
   #    - NOTIFY: mySlackS1
   #    - NOTIFY: myEmailS1
