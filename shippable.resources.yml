@@ -5,7 +5,15 @@ resources:
     pointer:
       sourceName: shiphitchcock4/sample-script
       branch: master
-      
+  
+   - name: sample-public2
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiphitchcock4/sample-script2
+      branch: master
+  
+  
       
   - name: sample-private1
     type: gitRepo
