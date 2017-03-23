@@ -8,7 +8,7 @@ jobs:
     steps:
     #  - IN: sample-script-31  #girepo reso name
       - IN: image1
-       
+      - IN: keyvalue
       - IN: sample-private1
       #- IN: script
       #- IN: sample-publicchangename
