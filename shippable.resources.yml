@@ -58,4 +58,4 @@ resources:
   
   - name: keyvalue
     type: integration
-    integration: generic-integration
+    integration: keyvalue
