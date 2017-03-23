@@ -54,3 +54,8 @@ resources:
       sourceName: "shiphitchcock4/hitchcock4_sample_nodenew"
     seed:
       versionName: "latest"
+      
+  
+  - name: keyvalue
+    type: integration
+    integration: generic-integration
