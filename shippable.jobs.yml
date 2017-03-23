@@ -37,7 +37,7 @@ jobs:
      
       - IN: image1
       - TASK:
-        - script: ./IN/sample-private1sre/gitRepo/echo.sh
+        - script: ./IN/sample-private1/gitRepo/echo.sh
   #  on_success:
   #    - NOTIFY: mySlackS1
   #    - NOTIFY: myEmailS1
