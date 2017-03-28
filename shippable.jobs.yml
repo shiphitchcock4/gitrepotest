@@ -49,6 +49,7 @@ jobs:
     type: runCLI
     steps:
       - IN: image1  
+      - IN: key-test1
       - TASK:
         - script: printenv 
   #      - script: echo && echo && echo
