@@ -45,3 +45,23 @@ jobs:
   #  on_failure:
   #    - NOTIFY: mySlackS1
   #    - NOTIFY: myEmailS1 
+  - name: printenvs-runSh
+    type: runSh
+    steps:
+      #- IN: node-integration
+      - IN: image1
+      - IN: key-test
+      - TASK:
+        - script: printenv 
+        - script: echo && echo && echo
+        - script: cat $NODEINTEGRATION_PATH/integration.env
+        - script: echo && echo && echo
+        - script: cat $NODEINTEGRATION_PATH/integration.json
+        - script: echo && echo && echo
+        - script: cat $KEYVALUEPAIRINTEGRATION_PATH/integration.env
+        - script: echo && echo && echo
+        - script: cat $KEYVALUEPAIRINTEGRATION_PATH/integration.json  
+        - script: echo && echo && echo
+        - script: cat $SLACKINTEGRATION_PATH/integration.env
+        - script: echo && echo && echo
+        - script: cat $SLACKINTEGRATION_PATH/integration.json
