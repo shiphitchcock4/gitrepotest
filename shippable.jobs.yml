@@ -77,10 +77,10 @@ jobs:
       - IN: test_params
       - TASK:
         - script: printenv 
-  #      - script: echo && echo && echo
-   #     - script: cat $NODEINTEGRATION_PATH/integration.env
-   #     - script: echo && echo && echo
-   #     - script: cat $NODEINTEGRATION_PATH/integration.json
+        - script: echo && echo && echo
+        - script: cat $NODEINTEGRATION_PATH/integration.env
+        - script: echo && echo && echo
+        - script: cat $NODEINTEGRATION_PATH/integration.json
         - script: echo && echo && echo
         - script: cat $KEYTEST1_PATH/integration.env
         - script: echo && echo && echo
