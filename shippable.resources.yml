@@ -58,4 +58,4 @@ resources:
   
   - name: key-test
     type: integration
-    integration: key-test
+    integration: key-test  
