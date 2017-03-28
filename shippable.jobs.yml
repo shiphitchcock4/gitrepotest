@@ -73,7 +73,7 @@ jobs:
       - IN: image1
       - IN: key-test1
       - IN: envtest
-  
+      - IN: keyvalue
       - IN: test_params
       - TASK:
         - script: printenv 
@@ -89,6 +89,10 @@ jobs:
         - script: cat $ENVTEST_PATH/integration.env
         - script: echo && echo && echo
         - script: cat $ENVTEST_PATH/integration.json 
+        - script: echo && echo && echo
+        - script: cat $KEYVALUE_PATH/integration.env
+        - script: echo && echo && echo
+        - script: cat $KEYVALUE_PATH/integration.json 
     #    - script: echo && echo && echo
     #    - script: cat $SLACKINTEGRATION_PATH/integration.env
     #    - script: echo && echo && echo
