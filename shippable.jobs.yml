@@ -69,7 +69,7 @@ jobs:
   - name: printenvs-runSh
     type: runSh
     steps:
-      #- IN: node-integration
+      - IN: node-integration
       - IN: image1
       - IN: key-test1
       - IN: envtest
