@@ -54,7 +54,11 @@ resources:
       sourceName: "shiphitchcock4/hitchcock4_sample_nodenew"
     seed:
       versionName: "latest"
-      
+  - name: test_params
+    type: params
+    version:
+      params:
+        TEST: rc    
   
   - name: key-test1
     type: integration
