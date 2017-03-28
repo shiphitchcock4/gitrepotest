@@ -63,3 +63,7 @@ resources:
   - name: key-test1
     type: integration
     integration: key-test  
+    
+  - name: envtest
+    type: integration
+    integration: envtest 
