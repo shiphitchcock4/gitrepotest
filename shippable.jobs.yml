@@ -50,7 +50,7 @@ jobs:
     steps:
       #- IN: node-integration
       - IN: image1
-      - IN: key-test
+      - IN: key-test1
       - TASK:
         - script: printenv 
   #      - script: echo && echo && echo
