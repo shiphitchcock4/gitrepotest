@@ -71,6 +71,10 @@ resources:
   - name: envtest
     type: integration
     integration: envtest 
+    
+  - name: keydeletetest
+    type: integration
+    integration: keydeletetest
   
   - name: node-integration
     type: integration
