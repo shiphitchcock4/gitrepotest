@@ -30,7 +30,7 @@ resources:
       
   - name: mySlackS2
     type: notification
-    integration: "ship4-slack"
+    integration: "ship_slack"
     pointer:
       recipients:
        # - theyare
