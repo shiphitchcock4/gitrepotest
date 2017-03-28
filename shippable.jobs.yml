@@ -68,6 +68,8 @@ jobs:
       #- IN: node-integration
       - IN: image1
       - IN: key-test1
+      - IN: envtest
+  
       - IN: test_params
       - TASK:
         - script: printenv 
