@@ -74,7 +74,7 @@ jobs:
       - IN: key-test1
       - IN: envtest
       - IN: keyvalue
-      - IN: keydeletetest
+     
       - IN: test_params
       - TASK:
         - script: printenv 
