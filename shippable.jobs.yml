@@ -45,6 +45,22 @@ jobs:
   #  on_failure:
   #    - NOTIFY: mySlackS1
   #    - NOTIFY: myEmailS1 
+  - name: runcliscript
+    type: runCLI
+    steps:
+      - IN: image1  
+      - TASK:
+        - script: printenv 
+  #      - script: echo && echo && echo
+   #     - script: cat $NODEINTEGRATION_PATH/integration.env
+   #     - script: echo && echo && echo
+   #     - script: cat $NODEINTEGRATION_PATH/integration.json
+        - script: echo && echo && echo
+        - script: cat $KEYTEST1_PATH/integration.env
+        - script: echo && echo && echo
+        - script: cat $KEYTEST1_PATH/integration.json  
+      #  - script: ./IN/pipeline_scriptRepo/gitRepo/runcli/accInt.sh 
+
   - name: printenvs-runSh
     type: runSh
     steps:
