@@ -50,6 +50,7 @@ jobs:
     steps:
       - IN: image1  
       - IN: key-test1
+      - IN: envtest
       - TASK:
         - script: printenv 
   #      - script: echo && echo && echo
@@ -59,7 +60,10 @@ jobs:
         - script: echo && echo && echo
         - script: cat $KEYTEST1_PATH/integration.env
         - script: echo && echo && echo
-        - script: cat $KEYTEST1_PATH/integration.json  
+        - script: cat $KEYTEST1_PATH/integration.json 
+        - script: cat $ENVTEST_PATH/integration.env
+        - script: echo && echo && echo
+        - script: cat $ENVTEST_PATH/integration.json 
       #  - script: ./IN/pipeline_scriptRepo/gitRepo/runcli/accInt.sh 
 
   - name: printenvs-runSh
