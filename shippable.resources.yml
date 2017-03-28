@@ -56,6 +56,6 @@ resources:
       versionName: "latest"
       
   
-  - name: keyvalue
+  - name: key-test
     type: integration
-    integration: keyvalue
+    integration: key-test
