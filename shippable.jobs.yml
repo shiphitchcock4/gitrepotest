@@ -80,7 +80,11 @@ jobs:
         - script: echo && echo && echo
         - script: cat $KEYTEST1_PATH/integration.env
         - script: echo && echo && echo
-        - script: cat $KEYTEST1_PATH/integration.json  
+        - script: cat $KEYTEST1_PATH/integration.json 
+        - script: echo && echo && echo
+        - script: cat $ENVTEST_PATH/integration.env
+        - script: echo && echo && echo
+        - script: cat $ENVTEST_PATH/integration.json 
     #    - script: echo && echo && echo
     #    - script: cat $SLACKINTEGRATION_PATH/integration.env
     #    - script: echo && echo && echo
