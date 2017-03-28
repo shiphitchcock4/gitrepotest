@@ -64,6 +64,10 @@ resources:
     type: integration
     integration: key-test  
     
+  - name: keyvalue
+    type: integration
+    integration: keyvalue
+    
   - name: envtest
     type: integration
     integration: envtest 
