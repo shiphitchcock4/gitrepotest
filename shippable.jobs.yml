@@ -58,9 +58,9 @@ jobs:
    #     - script: echo && echo && echo
    #     - script: cat $NODEINTEGRATION_PATH/integration.json
         - script: echo && echo && echo
-        - script: cat $KEYVALUEPAIRINTEGRATION_PATH/integration.env
+        - script: cat $KEYTEST1_PATH/integration.env
         - script: echo && echo && echo
-        - script: cat $KEYVALUEPAIRINTEGRATION_PATH/integration.json  
+        - script: cat $KEYTEST1_PATH/integration.json  
     #    - script: echo && echo && echo
     #    - script: cat $SLACKINTEGRATION_PATH/integration.env
     #    - script: echo && echo && echo
