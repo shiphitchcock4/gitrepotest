@@ -67,3 +67,7 @@ resources:
   - name: envtest
     type: integration
     integration: envtest 
+  
+  - name: node-integration
+    type: integration
+    integration: "node-integration"
