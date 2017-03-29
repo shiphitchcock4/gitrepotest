@@ -64,7 +64,9 @@ jobs:
         - script: cat $ENVTEST_PATH/integration.env
         - script: echo && echo && echo
         - script: cat $ENVTEST_PATH/integration.json 
-      #  - script: ./IN/pipeline_scriptRepo/gitRepo/runcli/accInt.sh 
+      #  - script: ./IN/pipeline_scriptRepo/gitRepo/runcli/accInt.sh
+      flags:
+       - runcli
 
   - name: printenvs-runSh
     type: runSh
