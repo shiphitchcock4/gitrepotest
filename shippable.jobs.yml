@@ -45,7 +45,7 @@ jobs:
   #  on_failure:
   #    - NOTIFY: mySlackS1
   #    - NOTIFY: myEmailS1 
-  - name: runcliscript
+  - name: remove
     type: runCLI
     steps:
       - IN: image1  
@@ -100,3 +100,28 @@ jobs:
     #    - script: cat $SLACKINTEGRATION_PATH/integration.env
     #    - script: echo && echo && echo
     #    - script: cat $SLACKINTEGRATION_PATH/integration.json
+      
+  - name: run1public
+    type: runSh
+  #  serial: false
+    steps:
+    #  - IN: sample-script-31  #girepo reso name
+      - IN: image1
+      - IN: keyvalue
+      - IN: sample-private1
+      #- IN: script
+      #- IN: sample-publicchangename
+     # - IN: sample-publicproject2
+      #- IN: allpl-version
+      #  versionName: 28361828b3079fce434d84b1f8388aed167be15f
+      # versionNumber: 1
+     # - IN: foo-resource
+     # - IN: env
+     # - IN: rc1
+      - TASK:
+        # - script: ./IN/sample-publicproject2/gitRepo/echo.sh
+         - script: ./IN/sample-private1/gitRepo/echo.sh
+         - script: echo 'api'
+         #- script: ./IN/sample-publicchangename/gitRepo/echo.sh
+         #- script: ./IN/script/gitRepo/echo.sh
+         - script: pwd
