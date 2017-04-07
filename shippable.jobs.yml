@@ -40,13 +40,13 @@ jobs:
       - TASK:
         - script: ./IN/sample-private1/gitRepo/echo.sh
     on_success:
-      - NOTIFY: mySlackS1
-      - NOTIFY: myEmailS1
-     # - NOTIFY: irc
+      - NOTIFY: mySlackS2
+      - NOTIFY: myEmailS2
+      - NOTIFY: irc
     on_failure:
-      - NOTIFY: mySlackS1
-      - NOTIFY: myEmailS1 
-      #- NOTIFY: irc
+      - NOTIFY: mySlackS2
+      - NOTIFY: myEmailS2
+      - NOTIFY: irc
       
       
   - name: remove
