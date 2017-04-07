@@ -39,12 +39,14 @@ jobs:
       - IN: image1
       - TASK:
         - script: ./IN/sample-private1/gitRepo/echo.sh
-  #  on_success:
-  #    - NOTIFY: mySlackS1
-  #    - NOTIFY: myEmailS1
-  #  on_failure:
-  #    - NOTIFY: mySlackS1
-  #    - NOTIFY: myEmailS1 
+    on_success:
+      - NOTIFY: mySlackS1
+      - NOTIFY: myEmailS1
+      - NOTIFY: irc
+    on_failure:
+      - NOTIFY: mySlackS1
+      - NOTIFY: myEmailS1 
+      - NOTIFY: irc
   - name: remove
     type: runCLI
     steps:
