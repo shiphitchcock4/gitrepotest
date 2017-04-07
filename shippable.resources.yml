@@ -53,7 +53,7 @@ resources:
       method: irc
       recipients: 
         - "webchat.irchighway.net#test-rc"
-        - "webchat.irchighway.net#irc-test"
+        - "webchat.irchighway.net#irc-three"
         
  
   - name: image1
