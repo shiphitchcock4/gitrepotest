@@ -39,17 +39,20 @@ jobs:
       - IN: image1
       - TASK:
         - script: ./IN/sample-private1sreya/gitRepo/echo.sh
-    on_start:
-      -  NOTIFY: irc
-    on_success:
-      - NOTIFY: mySlackS2
-      - NOTIFY: myEmailS2
+ #   on_start:
+ #     -  NOTIFY: irc
+ #   on_success:
+ #     - NOTIFY: mySlackS2
+ #     - NOTIFY: myEmailS2
+ #     - NOTIFY: irc
+ #   on_failure:
+ #     - NOTIFY: mySlackS2
+ #     - NOTIFY: myEmailS2
+ #     - NOTIFY: irc
+    always:
+      - script: echo "This works on_always"
       - NOTIFY: irc
-    on_failure:
-      - NOTIFY: mySlackS2
-      - NOTIFY: myEmailS2
-      - NOTIFY: irc
-      
+       
       
   - name: remove
     type: runCLI
