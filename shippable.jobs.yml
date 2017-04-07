@@ -42,11 +42,13 @@ jobs:
     on_success:
       - NOTIFY: mySlackS1
       - NOTIFY: myEmailS1
-      - NOTIFY: irc
+     # - NOTIFY: irc
     on_failure:
       - NOTIFY: mySlackS1
       - NOTIFY: myEmailS1 
-      - NOTIFY: irc
+      #- NOTIFY: irc
+      
+      
   - name: remove
     type: runCLI
     steps:
