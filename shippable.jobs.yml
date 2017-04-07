@@ -39,16 +39,16 @@ jobs:
       - IN: image1
       - TASK:
         - script: ./IN/sample-private1/gitRepo/echo.sh
- #   on_start:
- #     -  NOTIFY: irc
- #   on_success:
+    on_start:
+      -  NOTIFY: irc
+    on_success:
  #     - NOTIFY: mySlackS2
  #     - NOTIFY: myEmailS2
- #     - NOTIFY: irc
- #   on_failure:
+      - NOTIFY: irc
+    on_failure:
  #     - NOTIFY: mySlackS2
  #     - NOTIFY: myEmailS2
- #     - NOTIFY: irc
+      - NOTIFY: irc
     always:
       - script: echo "This works on_always"
       - NOTIFY: irc
