@@ -10,6 +10,7 @@ jobs:
       - IN: image1
       - IN: keyvalue
       - IN: sample-private1
+      - IN: gr1
       #- IN: script
       #- IN: sample-publicchangename
      # - IN: sample-publicproject2
