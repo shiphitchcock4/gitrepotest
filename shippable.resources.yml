@@ -26,7 +26,7 @@ resources:
     integration: github
     pointer:
       sourceName: shiphitchcock4/testprivate
-      branch: exe
+      branch: master
       
   - name: mySlackS2
     type: notification
