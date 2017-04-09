@@ -81,6 +81,13 @@ resources:
     type: integration
     integration: envtest 
     
+  - name: editeso.yml
+    type: image
+    integration: ship4-docker
+    pointer:
+      sourceName: "shiphitchcock4/hitchcock4_sample_nodenew"
+    seed:
+      versionName: "latest"  
  
   
   - name: node-integration
