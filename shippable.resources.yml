@@ -27,6 +27,7 @@ resources:
     pointer:
       sourceName: shiphitchcock4/testprivate
       branch: master
+      buildOnPullRequest: true
       
   - name: mySlackS2
     type: notification
