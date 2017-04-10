@@ -81,6 +81,15 @@ resources:
         - "#rc-public" 
         - "#rc-private"
         - "@shiptest-rc-ow"
+        
+  - name: notify-slack
+    type: notification
+    integration: "notify-slack"
+    pointer:
+      recipients:
+        - "#rc-public" 
+        - "#rc-private"
+        - "@shiptest-rc-ow"
   
   
   - name: image1
