@@ -13,3 +13,8 @@ triggers:
     type: trigger
     version:
       counter: 0
+      
+  - name: gr4
+    type: trigger
+    version:
+      counter: 0
