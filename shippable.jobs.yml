@@ -136,3 +136,24 @@ jobs:
          #- script: ./IN/sample-publicchangename/gitRepo/echo.sh
          #- script: ./IN/script/gitRepo/echo.sh
          - script: pwd
+    on_start:
+      - NOTIFY: notify-slack
+      - NOTIFY: notify-email
+      - NOTIFY: notify-hipchat
+      - NOTIFY: notify-irc
+      - script: echo 'it is for on_start'
+    on_success:      
+      - script: echo 'test in on_success'
+      - script: ls
+      - script: echo 'it is success'
+    # # - script: ./IN/sample-script-3/gitRepo/echo.sh
+    on_failure:
+      - script: echo 'testing1 failure'      
+      - script: pwd
+      - script: echo 'OOPS on_failure :('
+    always:
+      - script: echo "This works on_always"
+      - NOTIFY: notify-slack
+      - NOTIFY: notify-email
+      - NOTIFY: notify-hipchat
+      - NOTIFY: notify-irc
