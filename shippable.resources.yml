@@ -54,8 +54,15 @@ resources:
       method: irc
       recipients: 
         - "webchat.irchighway.net#test-rc"
-        - "webchat.irchighway.net#irc-three"
+      #  - "webchat.irchighway.net#irc-three"
         
+  - name: notify-irc
+    type: notification
+    pointer:
+      method: irc
+      recipients: 
+      #  - "webchat.irchighway.net#test-rc"
+        - "webchat.irchighway.net#irc-three"     
  
   - name: image1
     type: image
@@ -82,13 +89,7 @@ resources:
     type: integration
     integration: envtest 
     
-  - name: editeso.yml
-    type: image
-    integration: ship4-docker
-    pointer:
-      sourceName: "shiphitchcock4/hitchcock4_sample_nodenew"
-    seed:
-      versionName: "latest"  
+
  
   
   - name: node-integration
