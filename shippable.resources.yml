@@ -5,7 +5,7 @@ resources:
     pointer:
       sourceName: shiphitchcock4/sample-script
       branch: master
-      buildOnPullRequest: true
+     # buildOnPullRequest: true
      
   - name: sample-publicproject2
     type: gitRepo
