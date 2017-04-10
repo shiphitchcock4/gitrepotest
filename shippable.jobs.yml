@@ -12,7 +12,7 @@ jobs:
       - IN: sample-private1
       - IN: gr1
       #- IN: script
-      #- IN: sample-publicchangename
+      - IN: sample-publicchangename
      # - IN: sample-publicproject2
       #- IN: allpl-version
       #  versionName: 28361828b3079fce434d84b1f8388aed167be15f
@@ -25,7 +25,7 @@ jobs:
          - script: ./IN/sample-private1/gitRepo/echo.sh
          - script: echo 'api'
          - script: echo 'test'
-         #- script: ./IN/sample-publicchangename/gitRepo/echo.sh
+         - script: ./IN/sample-publicchangename/gitRepo/echo.sh
          #- script: ./IN/script/gitRepo/echo.sh
          - script: pwd
   
