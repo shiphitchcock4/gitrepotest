@@ -6,7 +6,7 @@ resources:
       sourceName: shiphitchcock4/sample-script
       branch: master
       buildOnPullRequest: true
-  
+     
   - name: sample-publicproject2
     type: gitRepo
     integration: github
