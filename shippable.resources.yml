@@ -14,7 +14,7 @@ resources:
     pointer:
       sourceName: shiphitchcock4/sample-script2
       branch: non
-      buildOnPullRequest: true
+    #  buildOnPullRequest: true
       buildOnTagPush: true
       
   - name: script
