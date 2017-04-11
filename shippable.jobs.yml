@@ -129,7 +129,7 @@ jobs:
     #    - script: echo && echo && echo
     #    - script: cat $SLACKINTEGRATION_PATH/integration.json
       
-  - name: run1public
+  - name: run1publics
     type: runSh
   #  serial: false
     steps:
