@@ -28,6 +28,23 @@ jobs:
          - script: ./IN/sample-publicchangename/gitRepo/echo.sh
          #- script: ./IN/script/gitRepo/echo.sh
          - script: pwd
+         
+  - name: testcommentrunSh
+    type: runSh
+  #  serial: false
+    steps:
+      - IN: image1
+      - IN: gr1
+      - IN: sample-publicproject2
+ 
+      - TASK:
+         - script: ./IN/sample-publicproject2/gitRepo/echo.sh
+        # - script: ./IN/sample-private1/gitRepo/echo.sh
+         - script: echo 'api'
+         - script: echo 'test'
+         #- script: ./IN/sample-publicchangename/gitRepo/echo.sh
+         #- script: ./IN/script/gitRepo/echo.sh
+         - script: pwd
   
       
   - name: four1
