@@ -15,7 +15,7 @@ resources:
       sourceName: shiphitchcock4/sample-script2
       branch: non
     #  buildOnPullRequest: true
-      buildOnTagPush: true
+     # buildOnTagPush: true
       
   - name: script
     type: gitRepo
