@@ -59,7 +59,7 @@ resources:
       recipients: 
         - "sreya@shippable.com"
         - "shiphitchcock4@gmail.com"
-        - "sreyaj10@gmail.com" 
+       # - "sreyaj10@gmail.com" 
    
   - name: irc
     type: notification
