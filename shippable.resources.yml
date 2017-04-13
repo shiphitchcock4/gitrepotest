@@ -4,12 +4,12 @@ resources:
     integration: github
     pointer:
       sourceName: shiphitchcock4/sample-script
-      branch: master
-      tags:
-      except:
-        - x1.*                          
-      only:
-         - v1.*      
+      branches:
+       tags:
+         except:
+           - x1.*                          
+         only:
+           - v1.*      
       buildOnRelease: true               
       buildOnTagPush: true 
       #buildOnPullRequest: true
