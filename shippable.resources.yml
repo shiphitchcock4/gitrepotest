@@ -7,9 +7,9 @@ resources:
       #branches:
       tags:
         except:
-          - x1.*                          
+          - x1.tag                         
         only:
-          - v1.*      
+          - v1.tag     
       buildOnRelease: true               
       buildOnTagPush: true 
       #buildOnPullRequest: true
