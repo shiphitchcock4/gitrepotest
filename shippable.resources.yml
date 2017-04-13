@@ -31,8 +31,8 @@ resources:
       sourceName: shiphitchcock4/sample-script
      # branch: master
       tags:                        
-        only:
-          - v1.*
+        except:
+          - x1.*
       buildOnRelease: true              
       buildOnTagPush: true
       
