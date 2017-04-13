@@ -9,7 +9,7 @@ resources:
         except:
           - x1.tag                         
         only:
-          - v1.tag     
+          - v1.tag1     
       buildOnRelease: true               
       buildOnTagPush: true 
       #buildOnPullRequest: true
