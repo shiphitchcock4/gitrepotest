@@ -29,10 +29,10 @@ resources:
     integration: github
     pointer:
       sourceName: shiphitchcock4/sample-script
-      branch: master
-      #tags:                        
-       # only:
-        #  - tag.*
+     # branch: master
+      tags:                        
+        only:
+          - tagtest
       buildOnRelease: true              
       buildOnTagPush: true
       
