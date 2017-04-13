@@ -19,8 +19,8 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiphitchcock4/sample-script2
-      branch: non
+      sourceName: shiphitchcock4/sample-script
+      branch: master
     #  buildOnPullRequest: true
      # buildOnTagPush: true
       
@@ -28,7 +28,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiphtichcock4/sample-script2
+      sourceName: shiphtichcock4/sample-script
       branch: master
       #tags:                        
        # only:
