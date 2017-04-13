@@ -24,6 +24,18 @@ resources:
     #  buildOnPullRequest: true
      # buildOnTagPush: true
       
+  - name: mytest-hubrepo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiphtichcock4/sample-script2
+      branch: master
+      #tags:                        
+       # only:
+        #  - tag.*
+      buildOnRelease: true              
+      buildOnTagPush: true
+      
   - name: script
     type: gitRepo
     integration: github
