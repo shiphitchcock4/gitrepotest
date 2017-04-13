@@ -32,7 +32,7 @@ resources:
      # branch: master
       tags:                        
         only:
-          - tagtest
+          - v1.*
       buildOnRelease: true              
       buildOnTagPush: true
       
