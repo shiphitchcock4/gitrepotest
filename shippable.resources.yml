@@ -1,17 +1,17 @@
 resources:
-  - name: sample-publicchangename
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiphitchcock4/sample-script
+ # - name: sample-publicchangename
+ #   type: gitRepo
+ #   integration: github
+ #   pointer:
+  #    sourceName: shiphitchcock4/sample-script
       #branches:
-      tags:
-        except:
-          - x1.tag                         
-        only:
-          - v1.tag1     
-      buildOnRelease: true               
-      buildOnTagPush: true 
+   #   tags:
+    #    except:
+     #     - x1.tag                         
+      #  only:
+       #   - v1.tag1     
+      #buildOnRelease: true               
+      #buildOnTagPush: true 
       #buildOnPullRequest: true
       #buildOnTagPush: true
      
