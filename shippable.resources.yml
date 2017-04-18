@@ -67,7 +67,7 @@ resources:
 
   - name: myEmailS2
     type: notification
-    pointer:
+   # pointer:
       method: email
       recipients: 
         - "sreya@shippable.com"
