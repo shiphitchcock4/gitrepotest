@@ -1,7 +1,7 @@
 triggers:
   - name: gr1
     type: trigger
-    version:
+    version: 67
       counter: 64
       
   - name: gr2
