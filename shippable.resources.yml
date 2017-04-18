@@ -125,7 +125,7 @@ resources:
     pointer:
       sourceName: "shiphitchcock4/hitchcock4_sample_nodenew"
     seed:
-  #    versionName: "latest"
+      versionName: "latest"
       
   - name: test_params
     type: params
