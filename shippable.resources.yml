@@ -1,5 +1,5 @@
 resources:
- # - name: sample-publicchangename
+ # - name: sample-publicchangename-2
  #   type: gitRepo
  #   integration: github
  #   pointer:
