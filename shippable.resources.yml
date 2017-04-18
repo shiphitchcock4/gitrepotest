@@ -124,8 +124,8 @@ resources:
     integration: ship4-docker
     pointer:
       sourceName: "shiphitchcock4/hitchcock4_sample_nodenew"
-  #  seed:
-      versionName: "latest"
+    seed:
+  #    versionName: "latest"
       
   - name: test_params
     type: params
