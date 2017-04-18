@@ -70,7 +70,7 @@ resources:
     pointer:
       method: email
       recipients:
-        - "sreya"
+       
         - "sreya@shippable.com"
         - "shiphitchcock4@gmail.com"
         - "sreyaj10@gmail.com"
