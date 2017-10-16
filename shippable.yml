@@ -16,6 +16,14 @@ build:
     - echo "$COMMITER"
     - echo "$foo"
     
-    
+integrations:    
+  notifications:
+
+    #- integrationName: emailtestordersort1235676     
+    - integrationName: test  
+      type: email   
+      on_start: always
+      on_success: always 
+      on_failure: always   
     
     
