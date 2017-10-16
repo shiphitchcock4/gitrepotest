@@ -21,7 +21,10 @@ integrations:
 
     #- integrationName: emailtestordersort1235676     
     - integrationName: test  
-      type: email   
+      type: email  
+      recipients:  
+        - shiphitchcock4@gmail.com
+      #  - shiptest.rc.me@gmail.com
       on_start: always
       on_success: always 
       on_failure: always   
